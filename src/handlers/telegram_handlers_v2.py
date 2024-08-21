@@ -76,7 +76,7 @@ def setup_handlers(app):
         
     async def set_api(update: Update, context: CallbackContext) -> int:
         user_id = str(str(update.effective_user.id))
-        api_key = 'AIzaSyBxIR_wt4K0wUghvazNQ_xH1S0f4rAc7T8' #update.message.text.split(maxsplit=1)[1]
+        api_key = update.message.text.split(maxsplit=1)[1]
   
         try:
             user_sessions[user_id] = GeminiFactory(api_key)
