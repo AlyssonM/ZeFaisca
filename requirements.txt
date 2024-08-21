@@ -1,0 +1,7 @@
+python-telegram-bot
+python-dotenv
+crewai
+crewai[tools]
+langchain-groq
+langchain-google-genai
+duckduckgo-search
